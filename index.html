@@ -152,7 +152,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time1"></h6>
         </div>
 
 
@@ -169,7 +169,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time2"></h6>
         </div>
 
 
@@ -186,7 +186,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time3"></h6>
         </div>
 
 
@@ -203,7 +203,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time4"></h6>
         </div>
 
 
@@ -251,7 +251,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time5"></h6>
         </div>
 
 
@@ -268,7 +268,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time6"></h6>
         </div>
 
 
@@ -285,7 +285,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time7"></h6>
         </div>
 
 
@@ -302,7 +302,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time8"></h6>
         </div>
 
 
@@ -346,7 +346,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time9"></h6>
         </div>
 
 
@@ -363,7 +363,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time10"> </h6>
         </div>
 
 
@@ -380,7 +380,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time11"></h6>
         </div>
 
 
@@ -397,7 +397,7 @@ body {
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
            </p> <br>
-          <h6 style="padding-right:90px;">Last updated...</h6>
+          <h6 style="padding-right:90px;" id="time12"></h6>
         </div>
 
 
@@ -418,6 +418,58 @@ body {
       
     </div>
   </div>
+
+  <script>
+   
+     
+
+    var today= new Date();
+    let min=today.getMinutes();
+    let hr=today.getHours();
+    if(min>59 || min<1)
+    {
+      document.getElementById('time1').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time2').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time3').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time4').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time5').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time6').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time7').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time8').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time9').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time10').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time11').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      document.getElementById('time12').innerHTML= "Last Updated"+""+hr.toString()+"min ago...";
+      
+
+
+    }
+    else if(min>1 || min<59)
+    {
+      document.getElementById('time1').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time2').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time3').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time4').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time5').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time6').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time7').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time8').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time9').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time10').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time11').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+      document.getElementById('time12').innerHTML= "Last Updated" + " "+ min.toString()+ " " +"min ago...";
+    }
+
+  
+   
+   
+
+    
+    
+
+
+
+  </script>
 
   
 </body>
