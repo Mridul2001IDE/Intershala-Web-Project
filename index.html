@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+       * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: gray;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+  
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  /* background-color:grey; */
+  /* color: #fefefe; */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-flow: wrap;
+  /* padding-left: 20px; */
+  /* border: 2px solid purple; */
+}
+
+.card {
+  margin-left: 1px;
+  width: 20%;
+  background: #fff;
+  border: 3px solid black;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: justify;
+  font-size: 18px;
+  
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+.btn:hover{
+    color: purple;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+.header{
+  text-align: center;
+}
+.dropdown{
+  float:right;
+}
+
+    </style>
+</head>
+
+<div class="header"><h1>Header</h1>   
+  <div class="dropdown">
+    <label >Exam:</label>
+    <select name="" id="">
+      <option value="ssc">SSC</option>
+      <option value="english">English</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="General Studies">General Studies</option>
+    </select>
+
+  </div>
+
+
+
+</div>
+
+<div class="container">
+  
+
+    <div class="heading">
+      <h1>General Studies</h1>
+    </div>
+
+
+    <div class="row">
+
+
+      <div class="card">
+
+        <div class="card-header">
+          <h1>History</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 1</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      <div class="card">
+
+        <div class="card-header">
+          <h1>Economics</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 2</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      <div class="card">
+
+        <div class="card-header">
+          <h1>Politics</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 3</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      <div class="card">
+
+        <div class="card-header">
+          <h1>Geography</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 4</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      
+     
+
+      
+
+
+      
+      
+
+      
+    
+
+
+
+      
+      
+    </div>
+  </div>
+
+
+<div class="container">
+  
+
+    <div class="heading">
+      <h1>English</h1>
+    </div>
+
+
+    <div class="row">
+
+
+      <div class="card">
+
+        <div class="card-header">
+          <h1>Grammer</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 1</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      <div class="card">
+
+        <div class="card-header">
+          <h1>Articles</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 2</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      <div class="card">
+
+        <div class="card-header">
+          <h1>Prepositions</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 3</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      <div class="card">
+
+        <div class="card-header">
+          <h1>Conjunctions</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 4</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      
+      
+
+
+      
+      
+
+      
+    
+
+
+
+      
+      
+    </div>
+  </div>
+<div class="container">
+  
+
+    <div class="heading">
+      <h1>Logical Reasoning</h1>
+    </div>
+
+
+    <div class="row">
+
+
+      <div class="card">
+
+        <div class="card-header">
+          <h1>Age</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 1</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      <div class="card">
+
+        <div class="card-header">
+          <h1>Blood Relations</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 2</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      <div class="card">
+
+        <div class="card-header">
+          <h1> Venn Diagrams</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 3</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      <div class="card">
+
+        <div class="card-header">
+          <h1>Assumption and Binary Logic</h1>
+        </div>
+
+        <div class="card-body">
+          <h3 style="padding-right: 15px; padding-bottom: 10px;">Card 4</h3>
+          
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+           </p> <br>
+          <h6 style="padding-right:90px;">Last updated...</h6>
+        </div>
+
+
+      </div>
+      
+      
+
+
+      
+      
+
+      
+    
+
+
+
+      
+      
+    </div>
+  </div>
+
+  
+</body>
+
+</html>
