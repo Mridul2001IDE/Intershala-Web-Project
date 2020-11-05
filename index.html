@@ -55,77 +55,117 @@
     
 
     <style>
-        
-
-        
-          .row {
-              margin-left: 60px;
-              display: flex;
-              flex-direction: row;
-              flex-flow: wrap;
-              /* border: 2px solid red; */
-          }
-  
-        .card-m{
-            
-            margin: 15px ;
-            
-            width:30%;
-            height: 200px;
-            box-shadow: 1px 7px 7px 3px  rgb(207, 187, 187);
-            border-radius: 12px;
-            transition: 0.4s;
-        }
-        .card-m:hover{
-            transform: scale(1.03);
-            box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-        }
-
-        }
-        
-        .card-m span{
-            margin: 5px;
-        }
-        .tp{
-            margin: 15px;
-        }
-        .sub-tp{
-            margin-left: 3px;
-            
-            padding:10px;
-        }
-        .btn{
-            color: white;
-            margin-left: 50%;
-            margin-top: 10px;
-            border-radius: 20px;
-            box-shadow: 4px 5px rgb(235, 229, 229);
-            transition: 0.3s;
-            font-size: 20px;
-            background-color: rgb(4, 47, 102)
-            
-            
-        }
-        .card-m input:hover{
-            cursor: pointer;
-        }
-
-        .btn:hover{
-            transform: scale(1.08);
-            box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-
-        }
 
        
-
+.card-container{
     
-    @media only screen and (max-width : 1220px) {
-        .card-m{
-            width: 40%;
-            margin: 20px;
-        }
-    	
+    margin: 30px;
+   
+width: 250px;
+height: 350px;
+background: #FFF;
+border-radius: 9px;
+
+box-shadow: 0px 1px 10px 1px #000;
+overflow: hidden;
+display: inline-block;
+}
+.upper-container{
+    
+height: 150px;
+
+
+}
+.upper-container .img-2{
+    border: 2px solid purple;
+    opacity: 0.8;
+    
+}
+.image-container{
+    
+background: white;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+padding-top: 10px;
+padding-left: -20px;
+transform: translate(90px,-50px);
+}
+.image-container img{
+    
+    margin-left: 15px;
+    margin-bottom: 200px;
+width: 50px;
+height: 50px;
+/* border-radius: 50%; */
+}
+.lower-container{
+    
+    
+height: 280px;
+background: #FFF;
+padding: 20px;
+padding-top: 40px;
+text-align: center;
+}
+.lower-container h3, h4{
+box-sizing: border-box;
+line-height: .6;
+font-weight: lighter;
+}
+.lower-container h4{
+color: #7F00FF;
+opacity: .6;
+font-weight: bold;
+}
+.lower-container p{
+font-size: 16px;
+color: gray;
+margin-bottom: 30px;
+}
+.lower-container .btn{
+padding: 10px 40px;
+background: #1a16e7;
+border: none;
+color: white;
+border-radius: 30px;
+font-size: 15px;
+text-decoration: none;
+font-weight: bold;
+transition: all .3s ease-in;
+}
+.lower-container .btn:hover{
+background: transparent;
+color: #7F00FF;
+border: 2px solid #7F00FF;
+
+      
+
+}
+
+/* @media only screen and (max-width : 1510px) {
+
+       .card-container{
+           width: 350px;
+       }
+    
     }
+@media only screen and (max-width : 1500px) {
+
+       .card-container{
+           width: 300px;
+           margin: 40px;
+       }
+    
+    }
+@media only screen and (max-width : 1400px) {
+
+       .card-container{
+           width: 450px;
+           margin: 40px;
+       }
+    
+    } */
 
 
    
@@ -137,11 +177,11 @@
      @media only screen and (max-width : 860px) {
     	
     } */
-    @media only screen and (max-width : 805px) {
+    /* @media only screen and (max-width : 805px) {
     	
-    }
+    } */
     /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
+    /* @media only screen and (max-width : 768px) {
     	.card-m{
 
              
@@ -150,10 +190,10 @@
         .btn{
             margin-left: 70%;
         }
-    }
+    } */
 
     /* Extra Small Devices, Phones */ 
-    @media only screen and (max-width : 570px) 
+    /* @media only screen and (max-width : 570px) 
     {
        .btn{
            margin-left: 55%;
@@ -166,34 +206,35 @@
             margin-left: 55%;
         }
 
-}
+} */
 
  
-    @media only screen and (max-width : 430px) {
+    /* @media only screen and (max-width : 430px) {
         .btn{
             margin-left: 40%;
         }
 
-    }
+    } */
     /* <!-- <div class="pcoded-content">
         <div class="pcoded-inner-content">
             <div class="main-body">
                 <div class="page-wrapper">
                     <div class="page-body"> --> */
-    @media only screen and (max-width : 320px) {
+    /* @media only screen and (max-width : 320px) {
         .btn{
             margin-left: 30%;
-        }
+        } */
 
       
 
-}
+
 
        
       
     </style>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
    
     
 
@@ -453,134 +494,264 @@
                                     <div class="page-body">
                                         <!-- Your contents goes hear -->
 
-                                        <div class="row">
-                                            <div class="card-m">
-                                                <div class="tp">
-                                                    <h1>Exercise-1</h1>
+                                        <div class="card-container">
+                                            <div class="upper-container" >
+                                                <div class="img-2">
+                                                    <img src="21421.jpg" alt="" width="300px" height="150px">
                                                 </div>
-                                                <div class="sub-tp">
-                                                    <span class="fa fa-user" > USERS</span>
-                                                    <span class="fa fa-question-circle-o" > QUESTIONS</span><br>
-                                            
+                                             
+                                            </div>
+                                            <div class="lower-container">
                                                 
-                                                    <span class="fa-sticky-note-o" > EXCERCISES</span>
-                                                    <span class="fas fa-coins" > COINS</span>
+                                               
+                                              
+                                               <div>
+                                                  <a href="#" class="btn">Start</a>
+                                               </div><br>
+                                               <div>
+                                                   
+                                                <span class="fa fa-user" style="  float: left;   " > <b>229 USERS</b>  </span>&nbsp;
+                                                    <span class="fa fa-question-circle-o" style=" float: right; " > <b>50 QUESTIONS</b></span><br>
+                                               </div><br>
+                                               <div>
                                                 
+                                                    <span class="fa fa-tasks" style=" float: left;  " > <b>15 EXERCISES</b></span>&nbsp;
+                                                    <span class="fa fa-database" style=" float: right; margin-left: 6px; "> <b>200 COINS</b></span>
+                                               </div>
 
-                                                </div>
-                                                <div >
-                                                    <button class="btn" >Start   </button>
-                                                </div>
+                                               
 
+                                               
+                                              
 
-                                        </div>
-                                        
-                                            <div class="card-m">
-                                                <div class="tp">
-                                                    <h1>Exercise-2</h1>
+                                               
+                                            </div>
+                                         </div>
+                                         <div class="card-container">
+                                            <div class="upper-container">
+                                                <div class="img-2">
+                                                    <img src="403885-PDKD17-147.jpg" alt="" width="300px" height="150px">
                                                 </div>
-                                                <div class="sub-tp">
-                                                    <span class="fa fa-user" > USERS</span>
-                                                    <span class="fa fa-question-circle-o" > QUESTIONS</span><br>
-                                            
+                                               <div class="image-container">
+                                                  <img src="padlock (1).png" />
+                                               </div>
+                                            </div>
+                                            <div class="lower-container">
+                                               
+                                              
+                                               <div>
+                                                  <a href="#" class="btn">Locked</a>
+                                               </div><br>
+                                               
+
+                                               
+                                               <div>
+                                                   
+                                                <span class="fa fa-user" style="  float: left;   " > <b>229 USERS</b>  </span>&nbsp;
+                                                    <span class="fa fa-question-circle-o" style=" float: right; " > <b>50 QUESTIONS</b></span><br>
+                                               </div><br>
+                                               <div>
                                                 
-                                                    <span class="fa-sticky-note-o" > EXCERCISES</span>
-                                                    <span class="fas fa-coins" > COINS</span>
+                                                    <span class="fa fa-tasks" style=" float: left;  " > <b>15 EXERCISES</b></span>&nbsp;
+                                                    <span class="fa fa-database" style=" float: right; margin-left: 6px; "> <b>200 COINS</b></span>
+                                               </div>
+                                               
+                                            </div>
+                                         </div>
+
+                                        <div class="card-container">
+                                            <div class="upper-container">
+                                                <div class="img-2">
+                                                    <img src="2136912.jpg" alt="" width="300px" height="150px">
+                                                </div>
+                                               <div class="image-container">
+                                                  <img src="padlock (1).png" />
+                                               </div>
+                                            </div>
+                                            <div class="lower-container">
+                                               
+                                              
+                                               <div>
+                                                  <a href="#" class="btn">Locked</a>
+                                               </div><br>
+                                               
+
+                                               
+                                               <div>
+                                                   
+                                                <span class="fa fa-user" style="  float: left;   " > <b>229 USERS</b>  </span>&nbsp;
+                                                    <span class="fa fa-question-circle-o" style=" float: right; " > <b>50 QUESTIONS</b></span><br>
+                                               </div><br>
+                                               <div>
                                                 
+                                                    <span class="fa fa-tasks" style=" float: left;  " > <b>15 EXERCISES</b></span>&nbsp;
+                                                    <span class="fa fa-database" style=" float: right; margin-left: 6px; "> <b>200 COINS</b></span>
+                                               </div>
+                                               
+                                            </div>
+                                         </div>
 
+                                         <div class="card-container">
+                                            <div class="upper-container">
+                                                <div class="img-2">
+                                                    <img src="21421.jpg" alt="" width="300px" height="150px">
                                                 </div>
-                                                <div>
-                                                    <button class="btn" >Locked <span class="fa fa-lock" ></span></button>
-                                                </div>
+                                               <div class="image-container">
+                                                  <img src="padlock (1).png" />
+                                               </div>
+                                            </div>
+                                            <div class="lower-container">
+                                               
+                                              
+                                               <div>
+                                                  <a href="#" class="btn">Locked</a>
+                                               </div><br>
+                                               
 
-
-                                        </div>
-                                        
-                                            <div class="card-m">
-                                                <div class="tp">
-                                                    <h1>Exercise-3</h1>
-                                                </div>
-                                                <div class="sub-tp">
-                                                    <span class="fa fa-user" > USERS</span>
-                                                    <span class="fa fa-question-circle-o" > QUESTIONS</span><br>
-                                            
+                                               
+                                               <div>
+                                                   
+                                                <span class="fa fa-user" style="  float: left;   " > <b>229 USERS</b>  </span>&nbsp;
+                                                    <span class="fa fa-question-circle-o" style=" float: right; " > <b>50 QUESTIONS</b></span><br>
+                                               </div><br>
+                                               <div>
                                                 
-                                                    <span class="fa-sticky-note-o" > EXCERCISES</span>
-                                                    <span class="fas fa-coins" > COINS</span>
+                                                    <span class="fa fa-tasks" style=" float: left;  " > <b>15 EXERCISES</b></span>&nbsp;
+                                                    <span class="fa fa-database" style=" float: right; margin-left: 6px; "> <b>200 COINS</b></span>
+                                               </div>
+                                               
+                                            </div>
+                                         </div>
+
+                                        <div class="card-container">
+                                            <div class="upper-container">
+                                                <div class="img-2">
+                                                    <img src="21421.jpg" alt="" width="300px" height="150px">
+                                                </div>
+                                               <div class="image-container">
+                                                  <img src="padlock (1).png" />
+                                               </div>
+                                            </div>
+                                            <div class="lower-container">
+                                               
+                                              
+                                               <div>
+                                                  <a href="#" class="btn">Locked</a>
+                                               </div><br>
+                                               
+
+                                               
+                                               <div>
+                                                   
+                                                <span class="fa fa-user" style="  float: left;   " > <b>229 USERS</b>  </span>&nbsp;
+                                                    <span class="fa fa-question-circle-o" style=" float: right; " > <b>50 QUESTIONS</b></span><br>
+                                               </div><br>
+                                               <div>
                                                 
+                                                    <span class="fa fa-tasks" style=" float: left;  " > <b>15 EXERCISES</b></span>&nbsp;
+                                                    <span class="fa fa-database" style=" float: right; margin-left: 6px; "> <b>200 COINS</b></span>
+                                               </div>
+                                               
+                                            </div>
+                                         </div>
 
-                                                </div>
-                                                <div>
-                                                    <button class="btn" >Locked  <span class="fa fa-lock" ></span></button>
-                                                </div>
 
-
-                                        </div>
-                                        
-                                            <div class="card-m">
-                                                <div class="tp">
-                                                    <h1>Exercise-4</h1>
+                                         <div class="card-container">
+                                            <div class="upper-container">
+                                                <div class="img-2">
+                                                    <img src="21421.jpg" alt="" width="300px" height="150px">
                                                 </div>
-                                                <div class="sub-tp">
-                                                    <span class="fa fa-user" > USERS</span>
-                                                    <span class="fa fa-question-circle-o" > QUESTIONS</span><br>
-                                            
+                                               <div class="image-container">
+                                                  <img src="padlock (1).png" />
+                                               </div>
+                                            </div>
+                                            <div class="lower-container">
+                                               
+                                              
+                                               <div>
+                                                  <a href="#" class="btn">Locked</a>
+                                               </div><br>
+                                               
+
+                                               
+                                               <div>
+                                                   
+                                                <span class="fa fa-user" style="  float: left;   " > <b>229 USERS</b>  </span>&nbsp;
+                                                    <span class="fa fa-question-circle-o" style=" float: right; " > <b>50 QUESTIONS</b></span><br>
+                                               </div><br>
+                                               <div>
                                                 
-                                                    <span class="fa-sticky-note-o" > EXCERCISES</span>
-                                                    <span class="fas fa-coins" > COINS</span>
+                                                    <span class="fa fa-tasks" style=" float: left;  " > <b>15 EXERCISES</b></span>&nbsp;
+                                                    <span class="fa fa-database" style=" float: right; margin-left: 6px; "> <b>200 COINS</b></span>
+                                               </div>
+                                               
+                                            </div>
+                                         </div>
+
+
+                                         <div class="card-container">
+                                            <div class="upper-container">
+                                                <div class="img-2">
+                                                    <img src="21421.jpg" alt="" width="300px" height="150px">
+                                                </div>
+                                               <div class="image-container">
+                                                  <img src="padlock (1).png" />
+                                               </div>
+                                            </div>
+                                            <div class="lower-container">
+                                               
+                                              
+                                               <div>
+                                                  <a href="#" class="btn">Locked</a>
+                                               </div><br>
+                                               
+
+                                               
+                                               <div>
+                                                   
+                                                <span class="fa fa-user" style="  float: left;   " > <b>229 USERS</b>  </span>&nbsp;
+                                                    <span class="fa fa-question-circle-o" style=" float: right; " > <b>50 QUESTIONS</b></span><br>
+                                               </div><br>
+                                               <div>
                                                 
+                                                    <span class="fa fa-tasks" style=" float: left;  " > <b>15 EXERCISES</b></span>&nbsp;
+                                                    <span class="fa fa-database" style=" float: right; margin-left: 6px; "> <b>200 COINS</b></span>
+                                               </div>
+                                               
+                                            </div>
+                                         </div>
 
+                                        <div class="card-container">
+                                            <div class="upper-container">
+                                                <div class="img-2">
+                                                    <img src="21421.jpg" alt="" width="300px" height="150px">
                                                 </div>
-                                                <div>
-                                                    <button class="btn" >Locked <span class="fa fa-lock" ></span></button>
-                                                </div>
+                                               <div class="image-container">
+                                                  <img src="padlock (1).png" />
+                                               </div>
+                                            </div>
+                                            <div class="lower-container">
+                                               
+                                              
+                                               <div>
+                                                  <a href="#" class="btn">Locked</a>
+                                               </div><br>
+                                               
 
-
-                                        </div>
-                                        
-                                            <div class="card-m">
-                                                <div class="tp">
-                                                    <h1>Exercise-5</h1>
-                                                </div>
-                                                <div class="sub-tp">
-                                                    <span class="fa fa-user" > USERS</span>
-                                                    <span class="fa fa-question-circle-o" > QUESTIONS</span><br>
-                                            
+                                               
+                                               <div>
+                                                   
+                                                <span class="fa fa-user" style="  float: left;   " > <b>229 USERS</b>  </span>&nbsp;
+                                                    <span class="fa fa-question-circle-o" style=" float: right; " > <b>50 QUESTIONS</b></span><br>
+                                               </div><br>
+                                               <div>
                                                 
-                                                    <span class="fa-sticky-note-o" > EXCERCISES</span>
-                                                    <span class="fas fa-coins" > COINS</span>
-                                                
-
-                                                </div>
-                                                <div>
-                                                    <button class="btn" >Locked <span class="fa fa-lock" ></span></button>
-                                                </div>
-
-
-                                        </div>
-                                        
-                                            <div class="card-m">
-                                                <div class="tp">
-                                                    <h1>Exercise-6</h1>
-                                                </div>
-                                                <div class="sub-tp">
-                                                    <span class="fa fa-user" > USERS</span>
-                                                    <span class="fa fa-question-circle-o" > QUESTIONS</span><br>
-                                            
-                                                
-                                                    <span class="fa-sticky-note-o" > EXCERCISES</span>
-                                                    <span class="fas fa-coins" > COINS</span>
-                                                
-
-                                                </div>
-                                                <div>
-                                                    <button class="btn" >Locked <span class="fa fa-lock" ></span></button>
-                                                </div>
-
-
-                                        </div>
-                                        
-                                            
+                                                    <span class="fa fa-tasks" style=" float: left;  " > <b>15 EXERCISES</b></span>&nbsp;
+                                                    <span class="fa fa-database" style=" float: right; margin-left: 6px; "> <b>200 COINS</b></span>
+                                               </div>
+                                               
+                                            </div>
+                                         </div>
                                            
                                               
 
